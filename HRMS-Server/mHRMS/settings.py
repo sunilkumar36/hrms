@@ -33,7 +33,7 @@ SECRET_KEY = config('django-insecure-#cedo6k@mkcoy%!r2$wy$8h-(9x&ev+v%tvx+-k-o%)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['54.80.180.49']
 
 AUTH_USER_MODEL = "AdminAccount.User"
 
@@ -99,11 +99,11 @@ WSGI_APPLICATION = 'mHRMS.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': config('DB_NAME', default=''),
-       'USER': config('DB_USER', default=''),
-       'PASSWORD': config('DB_PASSWORD', default=''),
-       'HOST': config('DB_HOST', default=''),
-       'PORT': config('DB_PORT', default=''),
+       'NAME': config('DATABASE_NAME', default=''),
+       'USER': config('DATABASE_USER', default=''),
+       'PASSWORD': config('DATABASE_PASSWORD', default=''),
+       'HOST': config('DATABASE_HOST', default=''),
+       'PORT': config('DATABASE_PORT', default=''),
    }
 }
 
